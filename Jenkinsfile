@@ -5,7 +5,8 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Checkout the code from the GitHub repository
-                git url: 'https://github.com/karanBalhotra-sketch/python.git'
+                git clone https://github.com/karanBalhotra-sketch/python.git
+
             }
         }
         
