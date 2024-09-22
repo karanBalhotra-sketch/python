@@ -2,13 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Clone Repository') {
-            steps {
-                // Checkout the code from the GitHub repository
-                git clone https://github.com/karanBalhotra-sketch/python.git
-
-            }
-        }
+        // Removed 'Clone Repository' stage
         
         stage('Build Server and Client') {
             steps {
